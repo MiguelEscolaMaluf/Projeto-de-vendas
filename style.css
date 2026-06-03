@@ -2,52 +2,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
+/* BODY */
 body {
+    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
 
+/* HEADER */
 header {
-    background-color: white;
+    background-color: #fff;
     padding: 20px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
+/* LOGO */
 .logo {
     font-size: 24px;
     font-weight: bold;
     color: #2a7ae4;
 }
 
+/* INPUT DO HEADER */
 header input {
     width: 40%;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 10px 15px;
     border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
 }
 
+/* BOTÃO */
 button {
     background-color: #2a7ae4;
-    color: white;
+    color: #fff;
     border: none;
     padding: 10px 18px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-/* Banner */
+button:hover {
+    background-color: #1d5fb8;
+}
+
+/* BANNER */
 .banner {
-    background-color: #2a7ae4;
-    color: white;
-    padding: 80px 8%;
-    background-image: url("./src/Banner.png");
+    background-image: url("./src/banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: #f00707;
+    padding: 80px 8%;
 }
 
 .banner h1 {
@@ -55,10 +67,16 @@ button {
     margin-bottom: 10px;
 }
 
+.banner p {
+    font-size: 18px;
+}
+
+/* MAIN */
 main {
     padding: 40px 8%;
 }
 
+/* TÍTULO CATEGORIA */
 .titulo-categoria {
     display: flex;
     justify-content: space-between;
@@ -66,48 +84,67 @@ main {
     margin-bottom: 25px;
 }
 
+/* PRODUTOS */
 .produtos {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
+/* CARD */
 .card {
-    background-color: white;
-    padding: 15px;
+    background-color: #fff;
     width: 180px;
+    padding: 15px;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGEM CARD */
 .card img {
     width: 100%;
     border-radius: 6px;
 }
 
+/* TÍTULO CARD */
 .card h3 {
     font-size: 16px;
     margin-top: 10px;
 }
 
+/* PREÇO */
 .card p {
     font-weight: bold;
     margin: 8px 0;
 }
 
+/* LINK CARD */
 .card a {
     color: #2a7ae4;
     font-weight: bold;
     text-decoration: none;
 }
 
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
 footer {
     background-color: #eaf2fd;
     padding: 40px 8%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
+/* FORMULÁRIO */
 footer form {
     display: flex;
     flex-direction: column;
@@ -115,9 +152,17 @@ footer form {
     gap: 10px;
 }
 
+/* INPUTS E TEXTAREA */
 footer input,
 footer textarea {
     padding: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* TEXTAREA */
+footer textarea {
+    resize: none;
+    height: 100px;
 }
