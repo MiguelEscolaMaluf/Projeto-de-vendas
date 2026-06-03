@@ -54,7 +54,7 @@ button:hover {
 
 /* BANNER */
 .banner {
-    background-image: url("./src/banner.png");
+    background-image: url("./src/Banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
